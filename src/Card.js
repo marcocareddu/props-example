@@ -1,9 +1,10 @@
 import React from "react";
 
-const Card = (props) => {
+  // Destructuring props Short version
+const Card = ({url, title, price, username}) => {
 
-  // Destructuring props
-  const {url, title, price, username} = props;
+  // Destructuring props Long version
+  // const {url, title, price, username} = props;
   return (
     <article className="col-3 d-flex flex-column justify-content-center align-items-center">
       <img src={url} alt="immagine di card" className="img-fluid" />
