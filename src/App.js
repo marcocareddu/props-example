@@ -1,4 +1,3 @@
-import Component from "./Component";
 import Card from "./Card";
 
 const card1 = {
@@ -19,21 +18,10 @@ function App() {
   return (
     <div className="App">
       <h1>Ciao a tutti</h1>
-      <Component />
       <div className="d-flex justify-content-evenly row">
 
-        <Card 
-        username = { card1.username}
-        price = { card1.price}
-        url = { card1.url}
-        title = { card1.title}
-        />
-        <Card 
-        username = { card2.username}
-        price = { card2.price}
-        url = { card2.url}
-        title = { card2.title}
-        />
+        <Card {...card1} />
+        <Card {...card2} />
 
       </div>
     </div>
