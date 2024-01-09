@@ -1,7 +1,7 @@
 import React from "react";
 
-  // Destructuring props Short version
-const Card = ({url, title, price, username}) => {
+  // Destructuring props Short version with props.children
+const Card = ({url, title, price, username, children}) => {
 
   // Destructuring props Long version
   // const {url, title, price, username} = props;
@@ -15,6 +15,7 @@ const Card = ({url, title, price, username}) => {
         <h6>{username}</h6>
         <p className="timer fw-bold">00:05</p>
         <div className="puntata">PUNTA</div>
+        {children}
       </div>
     </article>
   );

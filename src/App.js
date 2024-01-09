@@ -17,10 +17,12 @@ const card2 = {
 function App() {
   return (
     <div className="App">
-      <h1>Ciao a tutti</h1>
       <div className="d-flex justify-content-evenly row">
 
-        <Card {...card1} />
+        <Card {...card1}>
+          <p>Questo è un paragrafo passato come props.children</p>    
+        </Card>
+
         <Card {...card2} />
 
       </div>
